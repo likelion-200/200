@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header"><img src="assets/naver.svg" alt="네이버 로고" class="logo" /></header>
+
+    <form action="/" class="login-form">
+      <input type="email" required / placeholder="fastcampus@naver.com">
+      <input type="email" class="id" placeholder="fastcampus" />
+      <input type="password" class="pw" />
+      <input type="password" class="pw-check" />
+
+      <button class="submit-btn is_active">로그인</button>
+      <button class="submit-btn is_deactivate">로그인</button>
+
+      <input id="check" type="checkbox" />
+      <label for="check">로그인 상태 유지</label>
+
+      <article class="article">
+        <label for="security">IP보안</label>
+        <input id="security" type="checkbox" />
+      </article>
+    </form>
+  </body>
+</html>
