@@ -1,0 +1,52 @@
+fieldset {
+  border: 0;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+section {
+  inline-size: 460px;
+  background: #eee;
+}
+
+.login {
+  text-align: center;
+}
+
+.login-form {
+  fieldset {
+    padding: 0;
+  }
+  .login-input {
+    input {
+      inline-size: 430px;
+      block-size: 46px;
+      border: 1px solid #dadada;
+      padding-inline-start: 14px;
+      padding-inline-end: 14px;
+    }
+    & + div {
+      margin-top: 10px;
+    }
+  }
+  .login-button {
+    background-color: #03cf5d;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    inline-size: 100%;
+    block-size: 56px;
+    margin-block-start: 20px;
+  }
+  .login-check {
+  }
+}
