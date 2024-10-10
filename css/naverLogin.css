@@ -1,44 +1,66 @@
 @import "../../common/normalize.css";
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  margin-inline: auto;
-}
+  width: 100vw;
 
-.naver_logo {
-  margin-left: auto;
-  margin-right: auto;
-  margin-inline: auto;
-}
+  .naver_logo {
+    display: flex;
+    justify-content: center;
+  }
 
-.insert_info {
-  inline-size: 465px;
-  padding: 3px;
-  margin-top: 50px;
-  margin-block-start: 50px;
-}
+  .insert_info {
+    inline-size: 465px;
+    padding: 3px;
+    margin-top: 50px;
+    margin-block-start: 50px;
+    margin: 0 auto;
 
-.placeholder {
-  line-height: 48px;
-  border: 1px solid #dadada;
-  color: #181818;
-  width: 465px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-block: 5px;
-}
+    .placeholder {
+      box-sizing: border-box;
+      line-height: 48px;
+      border: 1px solid #dadada;
+      color: #181818;
+      width: 465px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-block: 5px;
+      padding-left: 14px;
+      padding-inline-start: 14px;
+      display: inline-block;
 
-.login_btn {
-  width: 465px;
-  inline-size: 465px;
-  background-color: #03cf5d;
-  line-height: 48px;
-  color: white;
-  font-weight: 800;
-  border: 1px solid #03cf5d;
-}
+      &:focus {
+        outline: none;
+        border: 2px solid #03cf5d;
+      }
+    }
 
-.status {
-  justify-content: space-between;
+    .login_btn {
+      width: 465px;
+      inline-size: 465px;
+      background-color: #03cf5d;
+      line-height: 48px;
+      color: white;
+      font-weight: 800;
+      border: 1px solid #03cf5d;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-block: 20px;
+    }
+  }
+
+  .status {
+    justify-content: space-between;
+  }
 }

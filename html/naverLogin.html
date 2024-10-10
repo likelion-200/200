@@ -20,19 +20,22 @@
   </head>
   <body>
     <h1>네이버 로그인 예제</h1>
-    <div class="container">
-      <img src="../assets/naver.svg" alt="" class="naver_logo" />
-      <div>
-        <div class="insert_info">
-          <input type="text" placeholder="아이디" class="placeholder" />
-          <input type="password" placeholder="비밀번호" class="placeholder" />
-          <button class="login_btn">로그인</button>
-          <div class="status">
-            <span class="save_login"></span>
-            <span class="safe_ip"></span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <section class="container">
+      <h1 class="sr-only">네이버 로그인 구현</h1>
+      <figure class="naver_logo">
+        <img src="../assets/naver.svg" alt="" />
+        <figcaption class="sr-only">네이버 로그인</figcaption>
+      </figure>
+      <section class="insert_info">
+        <h1 class="sr-only">로그인 정보 입력 및 버튼</h1>
+        <input type="text" placeholder="아이디" class="placeholder" />
+        <input type="password" placeholder="비밀번호" class="placeholder" />
+        <button class="login_btn">로그인</button>
+        <section class="status">
+          <span class="save_login"></span>
+          <span class="safe_ip"></span>
+        </section>
+      </section>
+    </section>
   </body>
 </html>
