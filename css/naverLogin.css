@@ -1,0 +1,44 @@
+@import "../../common/normalize.css";
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-inline: auto;
+}
+
+.naver_logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-inline: auto;
+}
+
+.insert_info {
+  inline-size: 465px;
+  padding: 3px;
+  margin-top: 50px;
+  margin-block-start: 50px;
+}
+
+.placeholder {
+  line-height: 48px;
+  border: 1px solid #dadada;
+  color: #181818;
+  width: 465px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-block: 5px;
+}
+
+.login_btn {
+  width: 465px;
+  inline-size: 465px;
+  background-color: #03cf5d;
+  line-height: 48px;
+  color: white;
+  font-weight: 800;
+  border: 1px solid #03cf5d;
+}
+
+.status {
+  justify-content: space-between;
+}
