@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.header {
+  width: 100vw;
+  height: 6.25rem;
+  background-color: red;
+}
+
+.nav {
+  width: 100vw;
+  background-color: orange;
+}
+
+.content {
+  display: flex;
+  background-color: yellow;
+}
+
+.aside {
+  display: flex;
+  flex-grow: 1;
+  height: 100vw;
+  padding: 1.875rem;
+  flex-direction: column;
+  background-color: greenyellow;
+}
+
+.main {
+  flex-grow: 4;
+  height: 100vw;
+}
