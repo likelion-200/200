@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev": "run-p serve watch",
+    "serve": "live-server --port=8090 --host=localhost --browser=chrome",
+    "sass": "sass Sass:Sass/styles",
+    "watch": "npm run sass -- --watch",
+    "update": "npm run watch -- --update",
+    "build": "npm run sass -- --style compressed --no-source-map",
+    "remove": "rm -rf ./src/css ./src/styles"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.80.3"
+  }
+}
