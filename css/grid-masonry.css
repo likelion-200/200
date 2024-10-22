@@ -1,0 +1,40 @@
+@import "../../common/base.css";
+
+body,
+html {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.grid-masonry {
+  inline-size: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+
+  img {
+    inline-size: 100%;
+    object-fit: fill;
+  }
+
+  figure {
+    padding: 0.2rem;
+    border: 1px solid currentColor;
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 1080px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
