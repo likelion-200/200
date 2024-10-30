@@ -1,0 +1,81 @@
+$gray500: #757575;
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+@mixin size($width, $height: null) {
+  width: $width;
+  inline-size: $width;
+
+  @if ($height != null) {
+    height: $height;
+    block-size: $height;
+  }
+}
+
+@mixin placing($justify: null, $align: null, $text: null, $alignC: null) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  text-align: $text;
+  align-content: $alignC;
+}
+
+@mixin font(
+  $color: null,
+  $size: null,
+  $alignT: null,
+  $weight: null,
+  $lineHeight: null
+) {
+  color: $color;
+  font-size: $size;
+  @include placing($text: $alignT);
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+
+@mixin border($borderSize, $borderStyle, $borderColor, $radius) {
+  border: $borderSize $borderStyle $borderColor;
+  border-radius: $radius;
+}
+
+@mixin bg(
+  $bgc: null,
+  $bgi: null,
+  $bgr: null,
+  $bgpX: null,
+  $bgpY: null,
+  $bgsX: null,
+  $bgsY: null
+) {
+  background-color: $bgc;
+  background-image: url("../assets/icon/#{$bgi}.svg");
+  background-repeat: $bgr;
+  background-position: $bgpX, $bgpY;
+  background-size: $bgsX, $bgsY;
+}
+
+.combo-container {
+  @include size(113px);
+  @include bg(transparent, triangle, no-repeat, 95%, center, 16px, 16px);
+  margin: 50px;
+}
+
+.combo-ui {
+  appearance: none;
+  @include size(113px, 30px);
+  @include placing(null, center, center, center);
+  @include border(2px, solid, $gray500, 3px);
+  @include bg(transparent, global, no-repeat, 5%, center, 16px, 16px);
+  @include font($gray500, $weight: 600, $lineHeight: 1.2);
+}
