@@ -1,6 +1,6 @@
 # 플레이리스트 🎧
 
-[바로가기](http://127.0.0.1:5501/my_playlist/index.html)
+👉 [바로가기](http://127.0.0.1:5501/my_playlist/index.html)
 
 ### 코드설명
 
