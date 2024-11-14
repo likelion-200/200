@@ -9,7 +9,6 @@ body {
   margin: 0;
   overflow: hidden;
   transition: 0.2s;
-
   background-color: #aaa;
 }
 
@@ -150,12 +149,15 @@ button {
 
 .progress {
   margin: 0 auto;
-
+  background-color: #cccccc83;
   width: 15rem;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .progress__bar {
   background-color: white;
   height: 5px;
+  width: 0px;
   border-radius: 5px;
 }
