@@ -1,6 +1,6 @@
 ## 포켓몬 페이지 구현
 
-[미리보기](https://myeong-jae-hwi.github.io/js-homework/mission03/client/poketmon/poketmon.html)
+👉 [미리보기](https://myeong-jae-hwi.github.io/js-homework/mission03/client/poketmon/poketmon.html)
 
 <img width="30" src="./assets/favicon.webp" alt="몬스터볼">
 
